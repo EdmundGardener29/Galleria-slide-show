@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY*/
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  margin-top: 5%;
+}
+
+/*Header*/
+.header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6rem;
+  justify-content: space-between;
+  font-family: "Libre-Baskerville-Bold";
+  font-size: 48px;
+  margin-top: -5rem;
+}
+
+.header :nth-child(2) {
+  justify-self: flex-end;
+}
+
+.header-link {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: 2.57143px;
+  color: #7d7d7d;
+  text-decoration: none;
+  width: 87rem;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  color: #000;
+}
+/*Divider*/
+.divider {
+  border: 2px solid #e5e5e5;
+  margin-top: -2rem;
+}
+
+/* Grid-Gallery*/
+.grid-gallery {
+  height: 1390px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  /* background: yellow; */
+}
+
+.gallery-column-1 {
+  display: grid;
+  grid-template-rows: 250px 340px 420px 260px;
+  row-gap: 2.5rem;
+}
+.gallery-column-2 {
+  display: grid;
+  grid-template-rows: 400px 280px 260px 330px;
+  row-gap: 2.5rem;
+}
+.gallery-column-3 {
+  display: grid;
+  grid-template-rows: 285px 500px 525px;
+  row-gap: 2.5rem;
+}
+
+.gallery-column-4 {
+  display: grid;
+  grid-template-rows: 250px 250px 430px 340px;
+  row-gap: 2.5rem;
+}
+
+/* .gallery-items {
+}
+ */
+/*columns-items*/
+.gallery-text > h2 {
+  font-family: "Libre-Baskerville-Bold";
+  font-size: 24px;
+}
+.item1 > .gallery-text {
+  text-align: left;
+  width: 200px;
+  margin-top: 170px !important;
+}
+.item2 > .gallery-text {
+  text-align: left;
+  width: 250px;
+  margin-top: 220px !important;
+}
+.item4 > .gallery-text {
+  text-align: left;
+  width: 200px;
+  margin-top: 150px !important;
+}
+.item3 > .gallery-text {
+  width: 180px;
+  text-align: left;
+  margin-top: 310px !important;
+}
+.item5 > .gallery-text {
+  width: 190px;
+  text-align: left;
+  margin-top: 282px !important;
+}
+.item6 > .gallery-text {
+  text-align: left;
+  margin-top: 165px !important;
+}
+.item7 > .gallery-text {
+  width: 200px;
+  text-align: left;
+  margin-top: 180px !important;
+}
+
+.item8 > .gallery-text {
+  margin-top: 250px !important;
+}
+.item9 > .gallery-text {
+  margin-top: 200px !important;
+}
+.item10 > .gallery-text {
+  width: 180px;
+  text-align: left;
+  margin-top: 382px !important;
+}
+.item11 > .gallery-text {
+  margin-top: 445px !important;
+}
+.item12 > .gallery-text {
+  width: 170px;
+  text-align: left;
+  margin-top: 135px !important;
+}
+.item13 > .gallery-text {
+  width: 170px;
+  text-align: left;
+  margin-top: 135px !important;
+}
+.item14 > .gallery-text {
+  width: 170px;
+  text-align: left;
+  margin-top: 310px !important;
+}
+.item15 > .gallery-text {
+  margin-top: 260px !important;
+}
+
+.item1 {
+  background-image: url(./assets/starry-night/thumbnail.jpg);
+  background-size: cover;
+}
+
+.item2 {
+  background-image: url(./assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg);
+  background-size: cover;
+}
+.item3 {
+  background-image: url(./assets/lady-with-an-ermine/thumbnail.jpg);
+  background-size: cover;
+}
+.item4 {
+  background-image: url(./assets/the-boy-in-the-red-vest/thumbnail.jpg);
+  background-size: cover;
+}
+
+.item5 {
+  background-image: url(./assets/girl-with-pearl-earring/thumbnail.jpg);
+  background-size: cover;
+}
+
+.item6 {
+  background-image: url(./assets/the-great-wave-off-kanagawa/thumbnail.jpg);
+  background-size: cover;
+}
+
+.item7 {
+  background-image: url(./assets/the-night-cafe/thumbnail.jpg);
+  background-size: cover;
+}
+.item8 {
+  background-image: url(./assets/arnolfini-portrait/thumbnail.jpg);
+  background-size: cover;
+}
+.item9 {
+  background-image: url(./assets/guernica/thumbnail.jpg);
+  background-size: cover;
+}
+.item10 {
+  background-image: url(./assets/van-gogh-self-portrait/thumbnail.jpg);
+  background-size: cover;
+}
+.item11 {
+  background-image: url(./assets/mona-lisa/thumbnail.jpg);
+  background-size: cover;
+}
+.item12 {
+  background-image: url(./assets/penitent-magdalene/thumbnail.jpg);
+  background-size: cover;
+}
+.item13 {
+  background-image: url(./assets/the-sleeping-gypsy/thumbnail.jpg);
+  background-size: cover;
+}
+.item14 {
+  background-image: url(./assets/the-basket-of-apples/thumbnail.jpg);
+  background-size: cover;
+}
+.item15 {
+  background-image: url(./assets/the-swing/thumbnail.jpg);
+  background-size: cover;
+}
+*/ .column > h1,
+p {
+  text-align: left;
+}
+.column {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.column:hover {
+  background-color: #f2f2f2;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.gallery-text {
+  margin-top: 150px;
+  height: 83px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  color: #fff;
+  gap: 5px;
+}
+
+.gallery-text > p {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+/* ************************************************* */
+/* Tablet Version************************************* */
+@media only screen and (max-width: 768px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 15%;
+  }
+  .header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+    justify-content: space-between;
+    font-family: "Libre-Baskerville-Bold";
+    font-size: 48px;
+    margin-top: -5rem;
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /* overflow: hidden; */
+    margin-bottom: 80rem;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2rem;
+  }
+
+  .img-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 180px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    cursor: pointer;
+    padding: 16px;
+    z-index: 999;
+  }
+  .header-link {
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 2.57143px;
+    color: #7d7d7d;
+    text-decoration: none;
+    width: 25rem;
+    margin-right: 16rem;
+  }
+}
+
+/*******************************************************/
+/*Mobile Version****************************************/
+/*  */
+@media screen and (max-width: 480px) {
+  .body {
+    width: 375px;
+  }
+  .header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+    justify-content: space-between;
+    font-family: "Libre-Baskerville-Bold";
+    font-size: 38px;
+    margin-top: -5rem;
+  }
+  .header-link {
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 2.57143px;
+    color: #7d7d7d;
+    text-decoration: none;
+    width: 7rem;
+    margin-left: -3rem;
+    }
+  .gallery-image {
+    display: flex;
+    flex-direction: row;
+  }
+  .gallery-image > img {
+    width: 352px;
+    height: 100%;
+  }
+
+  .img-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(9, 9, 9);
+    color: #fff;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 92%;
+    cursor: pointer;
+    padding: 16px;
+    z-index: 999;
+    left: 80px;
+    top: 10px;
+  }
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 15rem;
+    position: absolute;
+    width: 327px;
+    height: 250px;
+    left: 24px;
+    top: 104px;
+  }
+
+  .gallery-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-name {
+    display: flex;
+    flex-direction: column;
+    width: 293px;
+    height: 148px;
+    left: 36px;
+    top: 565px;
+  }
+  .gallery-name > h1 {
+    width: 343px;
+  }
+
+  .gallery-artist {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55%;
+    left: -185px;
+  }
+  .gallery-message {
+    width: 327px;
+    height: 517px;
+    left: 24px;
+    top: 482px;
+  }
+  .gallery-message > h1 {
+    display: flex;
+    width: 10%;
+    top: calc(50% - 100px / 2 - 208.5px);
+  }
+  .artist-message {
+    margin-top: 1rem;
+    line-height: 35px;
+  }
+  .artist-message h1 {
+    font-size: 100px;
+    line-height: 2px;
+    height: 55px;
+    width: 1rem;
+    left: 20.22%;
+  }
+
+  .footer-details {
+    width: 2rem;
+  }
+  .footer-details h2 {
+    width: 12rem;
+  }
+  .footer-details p {
+    width: 8rem;
+  }
+  .footer-nav {
+    display: flex;
+  }
+}
