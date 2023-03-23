@@ -31,7 +31,7 @@
   font-family: "Libre-Baskerville";
   font-style: normal;
   font-weight: 700;
-  font-size: 9px;
+  font-size: 15px;
   line-height: 15px;
   text-align: right;
   letter-spacing: 2.57143px;
@@ -42,12 +42,12 @@
   color: #000;
 }
 .divider {
-  margin-top: -1px;
+  margin-top: -28px;
   display: block;
   border: 2px solid #847f7f;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  height: 2px;
+  height: 3px;
   z-index: 1;
 }
 
@@ -83,10 +83,10 @@
 /* Gallery-Name */
 .gallery-name {
   height: 239px;
-  width: 450px;
+  width: 376px;
   background-color: #fff;
   position: absolute;
-  left: 18%;
+  left: 30%;
   right: 0%;
   top: 25.999997%;
   bottom: 0%;
@@ -100,10 +100,10 @@
 
 .gallery-name > h1 {
   position: absolute;
-  height: 128px;
+  height: 120px;
   left: 14.61%;
   right: 10%;
-  top: calc(50% - 138px / 2 - 110px);
+  top: calc(50% - 95px / 2 - 110px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 700;
@@ -119,12 +119,12 @@
   height: 19px;
   left: 14.61%;
   right: 30.11%;
-  top: calc(50% - 19px / 2 + 3.5px);
+  top: calc(58% - 19px / 2 + 3.5px);
   font-family: "Libre Baskerville";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 29px;
   color: #7d7d7d;
   margin-top: 15%;
 }
@@ -175,7 +175,7 @@
   font-family: "Libre-Baskerville";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 28px;
   color: #7d7d7d;
   z-index: 1;
@@ -183,21 +183,21 @@
 }
 
 .artist-text > a {
-  position: absolute;
-  height: 11px;
-  left: 68.07%;
-  right: 25.43%;
-  top: calc(70% - 11px / 2 + 190.5px);
-  font-family: "Libre Baskerville";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 9px;
-  line-height: 15px;
-  letter-spacing: 1.92857px;
-  text-decoration-line: underline;
-  color: #7d7d7d;
-  cursor: pointer;
-  width: 20rem;
+    position: absolute;
+    height: 11px;
+    left: 68.07%;
+    right: 25.43%;
+    top: calc(75% - 11px / 2 + 247.5px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 1.92857px;
+    text-decoration-line: underline;
+    color: #7d7d7d;
+    cursor: pointer;
+    width: 20rem;
 }
 
 .artist-text > a:hover {
@@ -250,10 +250,9 @@
   z-index: 10;
   width: 100%;
   height: 100%;
-  /* transition: all 0.9s ease-in; */
+  transition: all 0.9s ease-in;
   cursor: pointer;
-  /* mix-blend-mode: normal; */
-  /* opacity: 0.25; */
+  mix-blend-mode: normal;
  
 }
 .myModal h1 :hover{
@@ -379,12 +378,12 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  .artist-text > a {
+ .artist-text > a {
     position: absolute;
     height: 14px;
     left: 10.07%;
     right: 25.43%;
-    top: calc(70% - -1154px / 2 + 267.5px);
+    top: calc(70% - -1260px / 2 + 267.5px);
     font-family: "Libre Baskerville";
     font-style: normal;
     font-weight: 700;
@@ -394,11 +393,12 @@
     text-decoration-line: underline;
     color: #000000;
     cursor: pointer;
+
   }
   .gallery-artist {
     display: flex;
     position: relative;
-    top: -11rem;
+    top: -12rem;
     left: 6%;
     align-self: flex-end;
   }
@@ -407,7 +407,7 @@
 /* *****************************************************
 /*******************************************************/
 /*Mobile Version****************************************/
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .body {
     height: 1138px;
     width: 100vw;
@@ -474,14 +474,28 @@
     width: 390px;
     height: 104px;
     /* left: 24px; */
-    top: 733px;
+    top: 676px;
     left: 28px;
   }
+  .gallery-name > h1 {
+    position: absolute;
+    height: 120px;
+    left: 14.61%;
+    right: 10%;
+    top: calc(50% - -16px / 2 - 110px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: #000000;
+    word-wrap: break-word;
+}
   .gallery-artist {
     display: flex;
     flex-direction: column;
-    margin-top: 55%;
-    left: -185px;
+    margin-top: 18rem;
+    left: -154px;
   }
   .gallery-message {
     width: 327px;
@@ -492,17 +506,47 @@
   .gallery-message > h1 {
     display: flex;
     width: 160%;
-    top: calc(50% - 100px / 2 - 208.5px);
+    top: calc(50% - 90px / 2 - 208.5px);
   }
   .artist-message {
-    margin-top: 1rem;
+    margin-top: -17rem;
     line-height: 35px;
   }
+  .artist-text > p {
+    width: 350px;
+    height: 336px;
+    margin-top: -6rem;
+    font-family: "Libre-Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: #7d7d7d;
+    z-index: 1;
+    align-items: center;
+}
+/* .artist-text > a {
+    position: absolute;
+    height: 11px;
+    left: 68.07%;
+    right: 25.43%;
+    top: calc(75% - 11px / 2 + 207.5px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 1.92857px;
+    text-decoration-line: underline;
+    color: #7d7d7d;
+    cursor: pointer;
+  
+} */
   .artist-message h1 {
     font-size: 100px;
     line-height: 2px;
     height: 55px;
-    width: 1rem;
+    width: 2rem;
     left: 20.22%;
   }
 

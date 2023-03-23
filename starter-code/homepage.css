@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 /* BODY*/
@@ -40,26 +41,26 @@
   letter-spacing: 2.57143px;
   color: #7d7d7d;
   text-decoration: none;
-  width: 67rem;
+  width: 65rem;
   cursor: pointer;
 }
 
 .header-link:hover {
   color: #000;
 }
-/*Divider*/
+
 .divider {
   border: 2px solid #e5e5e5;
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
 
-/* Grid-Gallery*/
+
 .grid-gallery {
   height: 1390px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
-  /* background: yellow; */
+  cursor: pointer;
 }
 
 .gallery-column-1 {
