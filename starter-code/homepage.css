@@ -9,7 +9,7 @@
 .body {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
   padding: 2rem;
   margin-top: 5%;
 }
@@ -51,7 +51,7 @@
 
 .divider {
   border: 2px solid #e5e5e5;
-  margin-top: 2rem;
+  margin-top: 0.1rem;
 }
 
 
@@ -59,30 +59,30 @@
   height: 1390px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
+  gap: 1.5rem;
   cursor: pointer;
 }
 
 .gallery-column-1 {
   display: grid;
   grid-template-rows: 250px 340px 420px 260px;
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
 }
 .gallery-column-2 {
   display: grid;
   grid-template-rows: 400px 280px 260px 330px;
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
 }
 .gallery-column-3 {
   display: grid;
   grid-template-rows: 285px 500px 525px;
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
 }
 
 .gallery-column-4 {
   display: grid;
   grid-template-rows: 250px 250px 430px 340px;
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
 }
 
 /* .gallery-items {
@@ -140,7 +140,7 @@
   margin-top: 382px !important;
 }
 .item11 > .gallery-text {
-  margin-top: 445px !important;
+  margin-top: 415px !important;
 }
 .item12 > .gallery-text {
   width: 170px;
@@ -250,7 +250,6 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
   color: #fff;
   gap: 5px;
 }
@@ -328,10 +327,11 @@ p {
     letter-spacing: 2.57143px;
     color: #7d7d7d;
     text-decoration: none;
-    width: 25rem;
-    margin-right: 16rem;
-  }
+   width: 23rem;
+    margin-right: -14rem;
 }
+  }
+
 
 /*******************************************************/
 /*Mobile Version****************************************/
@@ -446,6 +446,31 @@ p {
     height: 55px;
     width: 1rem;
     left: 20.22%;
+  }
+  .artist-text > p {
+    width: 350px;
+    height: 338px;
+    margin-top: 39rem;
+    font-family: "Libre-Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    color: #7d7d7d;
+    z-index: 1;
+    align-items: center;
+}
+  .progressBg {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 102%;
+    margin-top: -20px;
+    display: block;
+    background-color: #e5e5e5;
+    height: 2px;
+    z-index: -1;
+    margin-top: -0.1rem;
+    margin-top: 14rem;
   }
 
   .footer-details {

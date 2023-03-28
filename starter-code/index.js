@@ -6,6 +6,10 @@ const forwardNav = document.querySelector("#forward-nav");
 let jsonData;
 let jsonDatalength;
 let index = 0;
+cookie = getCookie('slideindex')
+if (cookie) {
+  index = cookie
+}
 function slide() {
   let html = ` <div class="myModal" id="myModal" style="display: none;">
     <div class="modal-inner"><span style="color: rgb(255, 255, 255);">
@@ -93,16 +97,28 @@ function showModal() {
 }
 
 
-
-function openSlideshow() {
-  window.location.href = "index.html";
-}
-
 function move(progressBar, progress, value) {
   progress.style.width = value + "%";
   progressBar.setAttribute("aria-valuenow", value);
   progressBar.style.width = value + "%";
 }
-const progressBar = document.querySelector(".progressBar");
-const progress = document.getElementById("progress");
-// move(progressBar, progress, 50);
+const logo = document.getElementById("logo"); 
+
+logo.addEventListener("click", () => {
+  window.location.href = "logo"; 
+});
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}

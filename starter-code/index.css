@@ -82,7 +82,7 @@
 
 /* Gallery-Name */
 .gallery-name {
-  height: 239px;
+  height: 283px;
   width: 376px;
   background-color: #fff;
   position: absolute;
@@ -103,7 +103,7 @@
   height: 120px;
   left: 14.61%;
   right: 10%;
-  top: calc(50% - 95px / 2 - 110px);
+  top: calc(50% - 82px / 2 - 110px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 700;
@@ -111,7 +111,6 @@
   line-height: 64px;
   color: #000000;
   word-wrap: break-word;
-  
 }
 
 .gallery-name > p {
@@ -119,7 +118,7 @@
   height: 19px;
   left: 14.61%;
   right: 30.11%;
-  top: calc(58% - 19px / 2 + 3.5px);
+  top: calc(58% - -18px / 2 + 3.5px);
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: 800;
@@ -146,7 +145,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -5rem;
+  margin-top: -8rem;
   margin-left: 2.78%;
   width: 21rem;
 }
@@ -169,35 +168,39 @@
 }
 
 .artist-text > p {
-  width: 350px;
-  height: 336px;
-  margin-top: -10rem;
-  font-family: "Libre-Baskerville";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 28px;
-  color: #7d7d7d;
-  z-index: 1;
-  align-items: center;
+ position: absolute;
+height: 364px;
+left: 65.07%;
+right: 9.19%;
+top: calc(50% - 7px/2 - 15px);
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 28px;
+/* or 200% */
+
+
+color: #7D7D7D;
+
 }
 
 .artist-text > a {
-    position: absolute;
-    height: 11px;
-    left: 68.07%;
-    right: 25.43%;
-    top: calc(75% - 11px / 2 + 247.5px);
-    font-family: "Libre Baskerville";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 9px;
-    line-height: 15px;
-    letter-spacing: 1.92857px;
-    text-decoration-line: underline;
-    color: #7d7d7d;
-    cursor: pointer;
-    width: 20rem;
+  position: absolute;
+  height: 11px;
+  left: 69.07%;
+  right: 29.43%;
+  top: calc(70% - 15px / 2 + 247.5px);
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 15px;
+  letter-spacing: 1.92857px;
+  text-decoration-line: underline;
+  color: #7d7d7d;
+  cursor: pointer;
+  width: 20rem;
 }
 
 .artist-text > a:hover {
@@ -241,7 +244,7 @@
 }
 
 .myModal {
-   background-color: rgba(0, 0, 0, 0.85); 
+  background-color: rgba(0, 0, 0, 0.85);
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -253,12 +256,10 @@
   transition: all 0.9s ease-in;
   cursor: pointer;
   mix-blend-mode: normal;
- 
 }
-.myModal h1 :hover{
+.myModal h1 :hover {
   opacity: 0.25;
   background: #f3f3f3;
-  
 }
 .modal-inner {
   padding-top: -5rem;
@@ -269,7 +270,6 @@
   text-transform: uppercase;
   mix-blend-mode: normal;
   font-size: 18px;
- 
 }
 
 .modal-inner > span {
@@ -286,32 +286,32 @@
   margin-top: -1px;
   display: block;
   background-color: #000000;
-  margin-left: 0 !important;
+  margin-left: 1;
   margin-right: 0 !important;
   height: 2px;
   z-index: 1;
-  margin-top: 0rem;
+  margin-top: -0.1rem;
 }
 .progressBg {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  width: 100%;
+  width: 102%;
   margin-top: -20px;
   display: block;
   background-color: #e5e5e5;
   height: 2px;
   z-index: -1;
-  margin-top: 1rem;
+  margin-top: -0.1rem;
 }
 */ .footer {
   align-self: flex-end;
-  top: 15rem;
+  top: 16rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  font-family:"Libre-Baskerville" ;
+  font-family: "Libre-Baskerville";
 }
 
 .footer-details {
@@ -345,7 +345,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-  margin-top: -5rem;
+  margin-top: -4rem;
   cursor: pointer;
 }
 
@@ -378,7 +378,7 @@
     flex-direction: column;
     gap: 1.5rem;
   }
- .artist-text > a {
+  .artist-text > a {
     position: absolute;
     height: 14px;
     left: 10.07%;
@@ -393,7 +393,6 @@
     text-decoration-line: underline;
     color: #000000;
     cursor: pointer;
-
   }
   .gallery-artist {
     display: flex;
@@ -490,7 +489,7 @@
     line-height: 64px;
     color: #000000;
     word-wrap: break-word;
-}
+  }
   .gallery-artist {
     display: flex;
     flex-direction: column;
@@ -524,8 +523,8 @@
     color: #7d7d7d;
     z-index: 1;
     align-items: center;
-}
-/* .artist-text > a {
+  }
+  /* .artist-text > a {
     position: absolute;
     height: 11px;
     left: 68.07%;
