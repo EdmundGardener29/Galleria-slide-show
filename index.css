@@ -168,27 +168,25 @@
 }
 
 .artist-text > p {
- position: absolute;
-height: 364px;
-left: 65.07%;
-right: 9.19%;
-top: calc(50% - 7px/2 - 15px);
-font-family: 'Libre Baskerville';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 28px;
-/* or 200% */
+  position: absolute;
+  height: 364px;
+  left: 65.07%;
+  right: 9.19%;
+  top: calc(50% - 7px / 2 - 15px);
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
 
-
-color: #7D7D7D;
-
+  color: #7d7d7d;
 }
 
 .artist-text > a {
   position: absolute;
   height: 11px;
-  left: 69.07%;
+  left: 65.07%;
   right: 29.43%;
   top: calc(70% - 15px / 2 + 247.5px);
   font-family: "Libre Baskerville";
@@ -200,7 +198,7 @@ color: #7D7D7D;
   text-decoration-line: underline;
   color: #7d7d7d;
   cursor: pointer;
-  width: 20rem;
+  width: 15rem;
 }
 
 .artist-text > a:hover {

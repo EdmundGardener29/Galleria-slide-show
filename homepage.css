@@ -39,7 +39,7 @@
   line-height: 15px;
   text-align: right;
   letter-spacing: 2.57143px;
-  color: #7d7d7d;
+  color: black;
   text-decoration: none;
   width: 65rem;
   cursor: pointer;
@@ -50,10 +50,9 @@
 }
 
 .divider {
-  border: 2px solid #e5e5e5;
+  border: 2px solid #7d7d7d;
   margin-top: 0.1rem;
 }
-
 
 .grid-gallery {
   height: 1390px;
