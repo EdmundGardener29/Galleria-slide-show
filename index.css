@@ -381,7 +381,7 @@
     height: 14px;
     left: 10.07%;
     right: 25.43%;
-    top: calc(70% - -1260px / 2 + 267.5px);
+    top: calc(70% - -1260px / 2 + 61.5px);
     font-family: "Libre Baskerville";
     font-style: normal;
     font-weight: 700;
@@ -398,6 +398,41 @@
     top: -12rem;
     left: 6%;
     align-self: flex-end;
+  }
+  .artist-text > p {
+    position: absolute;
+    height: 364px;
+    left: 10.07%;
+    right: 9.19%;
+    top: calc(50% - -1070px / 2 - -26px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7d7d;
+    width: 55%;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: -5rem;
+    cursor: pointer;
+  }
+  .gallery-name > h1 {
+    position: absolute;
+    height: 120px;
+    left: 14.61%;
+    right: 10%;
+    top: calc(50% - 82px / 2 - 90px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: #000000;
+    word-wrap: break-word;
   }
 }
 
@@ -420,14 +455,33 @@
   }
 
   .logo img {
-    width: 100%;
+    position: absolute;
+    left: 0%;
+    right: 60.43%;
+    top: 0%;
+    bottom: 0%;
+    background: #000000;
   }
 
   .header-link {
-    font-size: 9px !important;
-    width: 125px !important;
+    position: absolute;
+    height: 11px;
+    left: 63%;
+    right: 0%;
+    top: calc(50% - 11px / 2 + -243.5px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: right;
+    letter-spacing: 1.92857px;
+    color: #7d7d7d;
   }
-
+  .gallery-image > img {
+    width: 342px;
+    height: 90%;
+  }
   .gallery-image {
     display: flex;
     flex-direction: row;
@@ -456,11 +510,8 @@
     font-size: 100px;
     line-height: 2px;
     height: 55px;
-    width: 6rem;
-    padding-top: -15rem;
-    top: 10rem;
+    width: 10rem;
   }
-
   .gallery-details {
     display: flex;
     flex-direction: column;
@@ -468,31 +519,43 @@
   .gallery-name {
     display: flex;
     flex-direction: column;
-    width: 390px;
-    height: 104px;
-    /* left: 24px; */
-    top: 676px;
-    left: 28px;
+    width: 352px;
+    height: 75px;
+    top: 568px;
+    left: -11px;
   }
   .gallery-name > h1 {
     position: absolute;
-    height: 120px;
-    left: 14.61%;
-    right: 10%;
-    top: calc(50% - -16px / 2 - 110px);
+    height: 29px;
+    left: 15%;
+    right: 0%;
+    top: calc(50% - 49px / 2 - 31.5px);
     font-family: "Libre Baskerville";
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 24px;
+    line-height: 29px;
     color: #000000;
-    word-wrap: break-word;
+  }
+  .gallery-name > p {
+    position: absolute;
+    height: 19px;
+    left: 14.61%;
+    right: 30.11%;
+    top: calc(58% - -18px / 2 + -81.5px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 29px;
+    color: #7d7d7d;
+    margin-top: 15%;
   }
   .gallery-artist {
     display: flex;
     flex-direction: column;
-    margin-top: 18rem;
-    left: -154px;
+    margin-top: 14rem;
+    left: -211px;
   }
   .gallery-message {
     width: 327px;
@@ -510,9 +573,10 @@
     line-height: 35px;
   }
   .artist-text > p {
-    width: 350px;
-    height: 336px;
-    margin-top: -6rem;
+    width: 330px;
+    height: 351px;
+    left: 46px;
+    margin-top: -3rem;
     font-family: "Libre-Baskerville";
     font-style: normal;
     font-weight: 700;
@@ -522,12 +586,12 @@
     z-index: 1;
     align-items: center;
   }
-  /* .artist-text > a {
+  .artist-text > a {
     position: absolute;
     height: 11px;
-    left: 68.07%;
-    right: 25.43%;
-    top: calc(75% - 11px / 2 + 207.5px);
+    left: 10.07%;
+    right: 26.43%;
+    top: calc(75% - 11px / 2 + 724.5px);
     font-family: "Libre Baskerville";
     font-style: normal;
     font-weight: 700;
@@ -537,16 +601,25 @@
     text-decoration-line: underline;
     color: #7d7d7d;
     cursor: pointer;
-  
-} */
+  }
   .artist-message h1 {
     font-size: 100px;
     line-height: 2px;
     height: 55px;
-    width: 2rem;
+    width: 6rem;
     left: 20.22%;
   }
-
+  .progressBg {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 102%;
+    margin-top: -20px;
+    display: block;
+    background-color: #e5e5e5;
+    height: 2px;
+    z-index: -1;
+    margin-top: 14.9rem;
+  }
   /* footer{
     display: flex;
     flex-direction: row;
@@ -554,13 +627,26 @@
   .footer-details {
     width: 2rem;
   }
-  .footer-details h2 {
-    width: 12rem;
+  .footer-details > h1 {
+    position: absolute;
+    height: 17px;
+    left: 11%;
+    right: 4.21%;
+    top: calc(50% - 17px / 2 - -958px);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
   }
   .footer-details p {
     width: 8rem;
   }
   .footer-nav {
-    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: -4rem;
+    cursor: pointer;
   }
 }
